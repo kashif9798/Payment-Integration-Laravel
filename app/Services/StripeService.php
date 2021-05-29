@@ -31,10 +31,6 @@ class StripeService
         $headers['Authorization'] = $this->resolveAccessToken();
     }
 
-    public function asd(){
-        return 'asd' . $this->secret;
-    }
-
     public function decodeResponse($response)
     {
         // we decode the json response so we could access it like objects in php
